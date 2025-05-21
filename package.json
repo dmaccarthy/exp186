@@ -1,9 +1,13 @@
 {
   "name": "exp186",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Experimental Express / MathJax repository",
   "type": "module",
   "module": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "github:dmaccarthy/exp186"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
