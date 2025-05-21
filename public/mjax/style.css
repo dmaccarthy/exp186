@@ -1,0 +1,71 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+}
+
+article {
+    max-width: 1080px;
+    margin: auto;
+}
+
+#Menu {
+    width: 24em;
+    max-width: 96vw;
+    min-height: 6em;
+    border: 1px solid #0065fe;
+    background: #f0f0ff;
+    position: fixed;
+    right: 2vw;
+    top: 2vw;
+    overflow: auto;
+    color: #0065fe;
+    display: none;
+}
+
+#Menu section {
+    margin: 1em;
+}
+
+#Menu section p:not(.Current) {
+    cursor: pointer;
+}
+
+#Menu section p:hover:not(.Current) {
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+}
+
+#Menu section p.Current, #Menu footer {
+    color: black;
+}
+
+#Menu footer {
+    font-size: 75%;
+}
+
+#Path, #Options {
+    border-bottom: 1px solid black;
+}
+
+#Path > p, #Options > p {
+    margin: 0.25em;
+}
+
+#Input {
+    width: 98%;
+    height: 12em;
+}
+
+#Images {
+    margin-top: 2em;
+}
+
+#Images > p {
+    padding-bottom: 1em;
+    border-bottom: 1px solid black;
+}
+
+#Images > p > img {
+    vertical-align: middle;
+}

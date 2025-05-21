@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=""en-CA>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>MathJax Renderer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic"/>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> -->
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<h3>MathJax Renderer</h3>
+<nav id="Menu">
+    <!-- <header><p>
+        <span>Up</span> |
+        <span>Open...</span>
+        <span onclick="$('#Menu').fadeOut()">Hide</span>
+    </p></header> -->
+    <section>
+        <div id="Path">
+            <p>P1</p>
+        </div>
+        <div id="Options">
+            <p>O1</p>
+        </div>
+    </section>
+    <footer><p>ESC to toggle menu</p></footer>
+</nav>
+<article>
+    <p><textarea id="Input" spellcheck="false">C = 2\pi r</textarea></p>
+    <p><button id="Render" onclick="render()">Render</button></p>
+    <div id="Images"></div>
+</article>
+</body>
+</html>

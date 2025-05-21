@@ -1,0 +1,17 @@
+{"name": "Home", "menu": [
+    {"name": "Math", "menu": [
+        {"name": "2D Shapes", "menu": [
+            {"name": "Circle Circumeference", "eq": "C = 2\\pi r"},
+            {"name": "Circle Area", "eq": "A = \\pi r^2"}
+        ]},
+        {"name": "Trigonometry", "menu": [
+            {"name": "Pythagoras", "eq": "c^2 = a^2 + b^2"}
+        ]}
+    ]},
+    {"name": "Physics", "menu": [
+        {"name": "Dynamics", "menu": [
+            {"name": "Newtons 2nd", "eq": "\\vec{\\bf F}_{net} = m\\vec{\\bf a}"}
+        ]}
+    ]}
+]
+}
