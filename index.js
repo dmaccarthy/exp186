@@ -29,8 +29,7 @@ function trusted(req, res, next) {
 
 trusted.hosts = [
     "dmaccarthy.github.io",
-    // "node186.glitch.me",
-    // "replit.com",
+    // "dmaccarthy.glitch.me",
 ];
 
 function formdata(req, res, next) {
