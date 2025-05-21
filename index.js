@@ -19,7 +19,7 @@ function trusted(req, res, next) {
     if (refer) {
         let host = url.parse(refer).host;
         if (trusted.hosts.indexOf(host) > -1)
-            res.setHeader("Access-Control-Allow-Origin", `${req.protocol}://${host}`);
+            res.setHeader("Access-Control-Allow-Origin", `https://${host}`);
     }
     next();
 }
