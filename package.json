@@ -9,6 +9,10 @@
     "start": "node index.js"
   },
   "engines": {"node": "16.x"},
+    "repository": {
+      "type": "git",
+      "url": "github:dmaccarthy/exp186"
+  },
   "keywords": [],
   "author": "D.G. MacCarthy",
   "license": "GPL-3.0-only",

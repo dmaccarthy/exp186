@@ -32,6 +32,20 @@ trusted.hosts = [
     // "dmaccarthy.glitch.me",
 ];
 
+function buffer(chunks, decoder) {
+/* Convert byte chunks (e.g. form data) into a
+    Uint8Array and optionally decode into text */
+    let n = 0;
+    for (let item of chunks) n += item.length;
+    let view = new Uint8Array(new ArrayBuffer(n));
+    let i = 0;
+    for (let item of chunks) {
+        view.set(item, i);
+        i += item.length;
+    }
+    return decoder ? new TextDecoder(decoder).decode(view) : view;    
+}
+
 function formdata(req, res, next) {
 /* Get form data using npmjs.com/package/busboy */
     let fields = {};
@@ -44,7 +58,7 @@ function formdata(req, res, next) {
         file.on('data', (data) => {
             finfo.data.push(data);
             finfo.bytes += data.length;
-        }); /*.on('close', () => {})*/
+        }); //.on('close', () => {console.log(finfo)});
     });
     bb.on('field', (name, val, info) => {
         fields[name] = [val, info];
